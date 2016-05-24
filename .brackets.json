@@ -1,0 +1,14 @@
+{
+    "sass.enabled": false,
+    "path": {
+        "style.scss": {
+            "sass.enabled": true,
+            "sass.options": {
+                "outputDir": "",
+                "includePaths": [],
+                "sourceComments": true,
+                "outputStyle": "nested"
+            }
+        }
+    }
+}
