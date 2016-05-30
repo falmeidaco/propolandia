@@ -41,6 +41,14 @@
                 WebApp.screen.stage.animations.hidePanel();
                 WebApp.screen.home.animations.revelOptions();
             });
+            $(".img-item").click(function() {
+                var current = parseInt($(this).attr("alt"));
+                if (current+1<7) {
+                    $(this).attr("alt", current+1).attr("src", "assets/"+(current+1)+".jpg");
+                } else {
+                    $(this).attr("alt", 0).attr("src", "assets/0.jpg");
+                }
+            });
         }
     }
     
