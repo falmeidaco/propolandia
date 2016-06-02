@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Objeto de Apendizagem</title>
+    <link rel="stylesheet" href="js/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script src="js/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="js/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="estagio-titlo">Bem vindo ao <span>Supermercado</span></h1>
+            <img class="estagio-icone" src="stages/supermarket/files/main-icon.png" alt="Stage Icon">
+            <nav class="estagio-menu">
+                <ul>
+                    <li><a href="#">Voltar</a></li>
+                    <li><a href="#">Ajuda</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="row">
+            <div class="tarefa-1 row">
+                <h2 class="tarefa-titulo text-center"><span>Tarefa 1</span> - Compar 4k de arroz</h2>
+                <div class="col-md-8">
+                    <div class="area-descricao">
+                        <p class="alert alert-info">Você precisa comprar <strong>4kg de arroz</strong>. Cada pacote de arroz tem <strong>1kg</strong>. Cada kg de arroz custa <strong>R$ 3,00</strong>. Complete a tabela com o valor correspondente à quantidade de pacotes de arroz.</p>
+                    </div>
+                    <div class="area-interativa row">
+                        <div class="col-md-4">
+                            <ul class="itens-tarefa">
+                                <li>
+                                    <div class="item-nome">Arroz (kg) <span class="badge">1</span></div>
+                                    <div class="item-icone">
+                                        <img src="http://dummyimage.com/84x84/000/fff" alt="Icone 1">    
+                                    </div>
+                                    <div class="acoes btn-group">
+                                        <button type="button" class="btn btn-default">Adicionar</button>
+                                        <button type="button" class="btn btn-default">Remover</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-nome">Valor (R$) <span class="badge">3,00</span></div>
+                                    <div class="item-icone">
+                                        <img src="http://dummyimage.com/84x84/000/fff" alt="Icone 1">    
+                                    </div>
+                                    <div class="acoes btn-group">
+                                        <button type="button" class="btn btn-default">Adicionar</button>
+                                        <button type="button" class="btn btn-default">Remover</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="canvas thumbnail">
+                                <canvas id="canvas" width="360" height="280"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading text-center">
+                            Tabela
+                        </div>
+                        <div class="panel-body">
+                            <p class="text-center">Preencha corretamente a tabela</p>
+                            <table class="tabela table">
+                                <tbody>
+                                    <tr class="linha-1">
+                                        <td><input class="form-control" type="text" disabled value="1"></td>
+                                        <td><input class="form-control" type="text" disabled value="3,00"></td>
+                                    </tr>
+                                    <tr class="linha-2">
+                                        <td><input class="form-control" type="text" disabled value="2"></td>
+                                        <td><input class="form-control" type="text" value=""></td>
+                                    </tr>
+                                    <tr class="linha-3">
+                                        <td><input class="form-control" type="text" disabled value="3"></td>
+                                        <td><input class="form-control" type="text" value=""></td>
+                                    </tr>
+                                    <tr class="linha-4">
+                                        <td><input class="form-control" type="text" disabled value="4"></td>
+                                        <td><input class="form-control" type="text" value=""></td>
+                                    </tr>
+                                    <tr class="linha-5">
+                                        <td><input class="form-control" type="text" disabled value="5"></td>
+                                        <td><input class="form-control" type="text" value=""></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button type="button" class="btn btn-primary btn-lg btn-block">Verificar respostas</button>
+                        </div>
+                    </div>
+                </div>
+                <ul class="narrativa-slide narrativa-inicial hidden">
+                    <li><img src="stages/supermarket/files/tela-narrativa1.jpg" alt="Tela1"></li>
+                    <li><img src="stages/supermarket/files/tela-narrativa2.jpg" alt="Tela2"></li>
+                </ul>
+                <ul class="narrativa-slide narrativa-final hidden">
+                    <li><img src="stages/supermarket/files/tela-narrativa4.jpg" alt="Tela1"></li>
+                    <li><img src="stages/supermarket/files/tela-narrativa3.jpg" alt="Tela2"></li>
+                </ul>
+            </div>            
+        </main>
+    </div>
+    <script src="script.js"></script>    
+</body>
+</html>
