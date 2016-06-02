@@ -9,7 +9,8 @@
                 "sourceComments": true,
                 "outputStyle": "nested"
             },
-            "linting.collapsed": true
+            "linting.collapsed": true,
+            "brackets-git.gitPath": "git"
         }
     }
 }

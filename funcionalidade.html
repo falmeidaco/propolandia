@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container">
-        <header>
+        <header class="hidden">
             <h1 class="estagio-titlo">Bem vindo ao <span>Supermercado</span></h1>
             <img class="estagio-icone" src="stages/supermarket/files/main-icon.png" alt="Stage Icon">
             <nav class="estagio-menu">
@@ -20,41 +20,62 @@
             </nav>
         </header>
         <main class="row">
-            <div class="tarefa-1 row">
-                <h2 class="tarefa-titulo text-center"><span>Tarefa 1</span> - Compar 4k de arroz</h2>
-                <div class="col-md-8">
-                    <div class="area-descricao">
-                        <p class="alert alert-info">Você precisa comprar <strong>4kg de arroz</strong>. Cada pacote de arroz tem <strong>1kg</strong>. Cada kg de arroz custa <strong>R$ 3,00</strong>. Complete a tabela com o valor correspondente à quantidade de pacotes de arroz.</p>
+            <div class="tarefa-1 situation-content row">
+                <div class="col-md-12">
+                    <h2 class="tarefa-titulo text-center"></h2>
+                    <div class="tarefa-descricao">
+                        <p class="alert alert-info"></p>
                     </div>
+                </div>
+                <div class="col-md-8">
                     <div class="area-interativa row">
                         <div class="col-md-4">
-                            <ul class="itens-tarefa">
-                                <li>
-                                    <div class="item-nome">Arroz (kg) <span class="badge">1</span></div>
-                                    <div class="item-icone">
-                                        <img src="http://dummyimage.com/84x84/000/fff" alt="Icone 1">    
-                                    </div>
-                                    <div class="acoes btn-group">
-                                        <button type="button" class="btn btn-default">Adicionar</button>
-                                        <button type="button" class="btn btn-default">Remover</button>
+                            <ul class="itens-tarefa list-group">
+                                <li class="list-group-item item-1" data-item_value="1">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            Arroz (kg) <span class="badge pull-right">1</span>
+                                        </div>
+                                        <div class="panel-body">
+                                            <div class="item-icone text-center">
+                                                <img src="stages/supermarket/files/pacote.png" alt="Pacote">    
+                                            </div>
+                                        </div>
+                                        <div class="panel-footer">
+                                            <div class="acoes btn-group">
+                                                <button type="button" class="btn btn-default remove-item btn-danger">Remover</button>
+                                                <button type="button" class="btn btn-default add-item btn-success">Adicionar</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </li>
-                                <li>
-                                    <div class="item-nome">Valor (R$) <span class="badge">3,00</span></div>
-                                    <div class="item-icone">
-                                        <img src="http://dummyimage.com/84x84/000/fff" alt="Icone 1">    
-                                    </div>
-                                    <div class="acoes btn-group">
-                                        <button type="button" class="btn btn-default">Adicionar</button>
-                                        <button type="button" class="btn btn-default">Remover</button>
+                                <li class="list-group-item item-2" data-item_value="3">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            Valor (R$) <span class="badge pull-right">3</span>
+                                        </div>
+                                        <div class="panel-body">
+                                            <div class="item-icone text-center">
+                                                <img src="stages/supermarket/files/moeda.png" alt="Moeda">    
+                                            </div>
+                                        </div>
+                                        <div class="panel-footer">
+                                            <div class="acoes btn-group">
+                                                <button type="button" class="btn btn-default remove-item btn-danger">Remover</button>
+                                                <button type="button" class="btn btn-default add-item btn-success">Adicionar</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </li>
                             </ul>
                         </div>
                         <div class="col-md-8">
-                            <div class="canvas thumbnail">
-                                <canvas id="canvas" width="360" height="280"></canvas>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <div class="canvas" style="min-height:300px;"></div>
+                                </div>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -65,34 +86,65 @@
                         </div>
                         <div class="panel-body">
                             <p class="text-center">Preencha corretamente a tabela</p>
-                            <table class="tabela table">
+                            <table class="tabela table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">Arroz (kg)</th>
+                                        <th class="text-center">Valor (R$)</th>
+                                    </tr>
+                                </thead>
                                 <tbody>
                                     <tr class="linha-1">
-                                        <td><input class="form-control" type="text" disabled value="1"></td>
-                                        <td><input class="form-control" type="text" disabled value="3,00"></td>
+                                        <td><input class="form-control valor" type="text" disabled value="1"></td>
+                                        <td><input class="form-control resposta" type="text" disabled value="3,00"></td>
                                     </tr>
                                     <tr class="linha-2">
-                                        <td><input class="form-control" type="text" disabled value="2"></td>
-                                        <td><input class="form-control" type="text" value=""></td>
+                                        <td><input class="form-control valor" type="text" disabled value="2"></td>
+                                        <td>
+                                            <div class="form-group has-feedback">
+                                                <input class="form-control resposta" type="text" value="">
+                                                <span class="success glyphicon glyphicon-ok form-control-feedback hidden" aria-hidden="true"></span>
+                                                <span class="error glyphicon glyphicon-remove form-control-feedback hidden" aria-hidden="true"></span>
+                                            </div>
+                                        </td>
                                     </tr>
                                     <tr class="linha-3">
-                                        <td><input class="form-control" type="text" disabled value="3"></td>
-                                        <td><input class="form-control" type="text" value=""></td>
+                                        <td><input class="form-control valor" type="text" disabled value="4"></td>
+                                        <td>
+                                           <div class="form-group has-feedback">
+                                                <input class="form-control resposta" type="text" value="">
+                                                <span class="success glyphicon glyphicon-ok form-control-feedback hidden" aria-hidden="true"></span>
+                                                <span class="error glyphicon glyphicon-remove form-control-feedback hidden" aria-hidden="true"></span>
+                                            </div>
+                                        </td>
                                     </tr>
                                     <tr class="linha-4">
-                                        <td><input class="form-control" type="text" disabled value="4"></td>
-                                        <td><input class="form-control" type="text" value=""></td>
+                                        <td><input class="form-control valor" type="text" disabled value="7"></td>
+                                        <td>
+                                            <div class="form-group has-feedback">
+                                                <input class="form-control resposta" type="text" value="">
+                                                <span class="success glyphicon glyphicon-ok form-control-feedback hidden" aria-hidden="true"></span>
+                                                <span class="error glyphicon glyphicon-remove form-control-feedback hidden" aria-hidden="true"></span>
+                                            </div>
+                                        </td>
                                     </tr>
                                     <tr class="linha-5">
-                                        <td><input class="form-control" type="text" disabled value="5"></td>
-                                        <td><input class="form-control" type="text" value=""></td>
+                                        <td><input class="form-control valor" type="text" disabled value="12"></td>
+                                        <td>
+                                            <div class="form-group has-feedback">
+                                                <input class="form-control resposta" type="text" value="">
+                                                <span class="success glyphicon glyphicon-ok form-control-feedback hidden" aria-hidden="true"></span>
+                                                <span class="error glyphicon glyphicon-remove form-control-feedback hidden" aria-hidden="true"></span>
+                                            </div>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
-                            <button type="button" class="btn btn-primary btn-lg btn-block">Verificar respostas</button>
+                            <button type="button" class="btn btn-primary btn-lg btn-block" id="veririca_respostas">Verificar respostas</button>
                         </div>
                     </div>
                 </div>
+                <!--
                 <ul class="narrativa-slide narrativa-inicial hidden">
                     <li><img src="stages/supermarket/files/tela-narrativa1.jpg" alt="Tela1"></li>
                     <li><img src="stages/supermarket/files/tela-narrativa2.jpg" alt="Tela2"></li>
@@ -101,9 +153,11 @@
                     <li><img src="stages/supermarket/files/tela-narrativa4.jpg" alt="Tela1"></li>
                     <li><img src="stages/supermarket/files/tela-narrativa3.jpg" alt="Tela2"></li>
                 </ul>
+                -->
             </div>            
         </main>
     </div>
+    <script src="stages/supermarket/settings.js"></script>    
     <script src="script.js"></script>    
 </body>
 </html>
