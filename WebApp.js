@@ -32,23 +32,25 @@
             }
         },
         init: function () {
+
             $(".stage-item a").click(function() {
                 WebApp.screen.home.animations.hideOptions();
                 WebApp.screen.stage.animations.revelPanel();
             });
+
             $(".back-home").click(function() {
                 
                 WebApp.screen.stage.animations.hidePanel();
                 WebApp.screen.home.animations.revelOptions();
             });
-            $(".img-item").click(function() {
-                var current = parseInt($(this).attr("alt"));
-                if (current+1<7) {
-                    $(this).attr("alt", current+1).attr("src", "assets/"+(current+1)+".jpg");
-                } else {
-                    $(this).attr("alt", 0).attr("src", "assets/0.jpg");
+
+            //Slider situação 1
+            $('.slider-content').unslider().on('unslider.change', function(event, index, slide) {
+                if (index === 2) {
+                    $('.unslider-arrow ').hide();
                 }
             });
+
         }
     }
     

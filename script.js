@@ -1,4 +1,6 @@
 (function ($) {
+
+
     var current_stage;
 
     current_stage = stages.supermercado;
@@ -67,6 +69,8 @@
         updateValues();
     });
 
+    updateValues();
+
     $("#veririca_respostas").click(function() {
         var item1_val, item2_val, resposta, n_linhas = $(".tabela tr").length, count_errors = 0;
 
@@ -97,6 +101,7 @@
         });
 
         if (count_errors === 0) {
+            //top.window.jQuery('.slider-content').unslider().setIndex(3);
             window.alert("Parabéns! Você acertou todas as respostas!")
         }
 

@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <title>Objeto de Apendizagem</title>
     <link rel="stylesheet" href="js/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="js/bower_components/unslider/dist/css/unslider.css">
+    <link rel="stylesheet" href="js/bower_components/unslider/dist/css/unslider-dots.css">
     <link rel="stylesheet" href="style.css">
     <script src="js/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="js/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/bower_components/unslider/dist/js/unslider-min.js"></script>
 </head>
 <body>
     <div class="app-container">
@@ -17,11 +20,42 @@
                 <div class="screen-container">
                     <header>
                         <img class="stage-icon" src="stages/supermarket/files/main-icon.png" alt="Mercado">
-                        <h2 class="title">Bem vindo ao <span>Mercado!</span></h2>
-                        <button class="ui-btn back-home">Voltar</button>
+                        <h2 class="title">Você está no <span>Mercado!</span></h2>
+                        <button class="ui-btn back-home"><span class="glyphicon glyphicon-circle-arrow-left"></span> Voltar</button>
                     </header>
-                    <div class="stage-conent">
-                        <img class="img-item" src="assets/0.jpg" alt="0">
+                    <div class="stage-content">
+                        <div class="slider-content">
+                            <ul>
+                                <li>
+                                    <div class="slider-image">
+                                        <img src="stages/supermarket/files/Untitled-1.jpg" alt="Imagem 1">
+                                    </div>
+                                    <p class="slider-text">
+                                        <span>DONA LUZIA</span> - Joãozinho meu filho, como vai você?<br>
+                                        <span>Joãozinho</span> - Estou bem Dona Luzia, e a senhora, indo para as compras?
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="slider-image">
+                                        <img src="stages/supermarket/files/Untitled-1.jpg" alt="Imagem 1">
+                                    </div>
+                                    <p class="slider-text">
+                                        <span>DONA LUZIA</span> - Sim sim meu querido, mas eu estou tão cansada... Poderia me ajudar a fazer umas contas? Você é bom em matemática né meu jovem?<br>
+                                        <span>Joãozinho</span> - Mas é claro Dona Luzia!
+                                    </p>
+                                </li>
+                                <li><iframe scrolling="no" src="funcionalidade.html" width="960" height="445" frameborder="0"></iframe></li>
+                                <li>
+                                    <div class="slider-image">
+                                        <img src="stages/supermarket/files/Untitled-1.jpg" alt="Imagem 1">
+                                    </div>
+                                    <p class="slider-text">
+                                        <span>DONA LUZIA</span> - Muito obrigado Joãoziho! Você me ajudou muito nas compras.<br>
+                                        <span>Joãozinho</span> - Que nada Dona Luzia!
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

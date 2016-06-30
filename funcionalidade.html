@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <title>Objeto de Apendizagem</title>
     <link rel="stylesheet" href="js/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <script src="js/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="js/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
-<body>
-    <div class="container">
+<body class="funcionalidade">
+    <div class="container-fluid">
         <header class="hidden">
             <h1 class="estagio-titlo">Bem vindo ao <span>Supermercado</span></h1>
             <img class="estagio-icone" src="stages/supermarket/files/main-icon.png" alt="Stage Icon">
@@ -22,14 +23,13 @@
         <main class="row">
             <div class="tarefa-1 situation-content row">
                 <div class="col-md-12">
-                    <h2 class="tarefa-titulo text-center"></h2>
                     <div class="tarefa-descricao">
-                        <p class="alert alert-info"></p>
+                        <p></p>
                     </div>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-7 col-sm-7">
                     <div class="area-interativa row">
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-sm-4">
                             <ul class="itens-tarefa list-group">
                                 <li class="list-group-item item-1" data-item_value="1">
                                     <div class="panel panel-default">
@@ -43,8 +43,8 @@
                                         </div>
                                         <div class="panel-footer">
                                             <div class="acoes btn-group">
-                                                <button type="button" class="btn btn-default remove-item btn-danger">Remover</button>
-                                                <button type="button" class="btn btn-default add-item btn-success">Adicionar</button>
+                                                <button type="button" class="btn btn-default remove-item btn-danger"><span class="glyphicon glyphicon-minus"></span></button>
+                                                <button type="button" class="btn btn-default add-item btn-success"><span class="glyphicon glyphicon-plus"></span></button>
                                             </div>
                                         </div>
                                     </div>
@@ -61,15 +61,15 @@
                                         </div>
                                         <div class="panel-footer">
                                             <div class="acoes btn-group">
-                                                <button type="button" class="btn btn-default remove-item btn-danger">Remover</button>
-                                                <button type="button" class="btn btn-default add-item btn-success">Adicionar</button>
+                                                <button type="button" class="btn btn-default remove-item btn-danger"><span class="glyphicon glyphicon-minus"></span></button>
+                                                <button type="button" class="btn btn-default add-item btn-success"><span class="glyphicon glyphicon-plus"></span></button>
                                             </div>
                                         </div>
                                     </div>
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-8 col-sm-8">
                             <div class="panel panel-default">
                                 <div class="panel-body">
                                     <div class="canvas" style="min-height:300px;"></div>
@@ -79,7 +79,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-5 col-sm-5">
                     <div class="panel panel-default">
                         <div class="panel-heading text-center">
                             Tabela
@@ -112,26 +112,6 @@
                                         <td><input class="form-control valor" type="text" disabled value="4"></td>
                                         <td>
                                            <div class="form-group has-feedback">
-                                                <input class="form-control resposta" type="text" value="">
-                                                <span class="success glyphicon glyphicon-ok form-control-feedback hidden" aria-hidden="true"></span>
-                                                <span class="error glyphicon glyphicon-remove form-control-feedback hidden" aria-hidden="true"></span>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="linha-4">
-                                        <td><input class="form-control valor" type="text" disabled value="7"></td>
-                                        <td>
-                                            <div class="form-group has-feedback">
-                                                <input class="form-control resposta" type="text" value="">
-                                                <span class="success glyphicon glyphicon-ok form-control-feedback hidden" aria-hidden="true"></span>
-                                                <span class="error glyphicon glyphicon-remove form-control-feedback hidden" aria-hidden="true"></span>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="linha-5">
-                                        <td><input class="form-control valor" type="text" disabled value="12"></td>
-                                        <td>
-                                            <div class="form-group has-feedback">
                                                 <input class="form-control resposta" type="text" value="">
                                                 <span class="success glyphicon glyphicon-ok form-control-feedback hidden" aria-hidden="true"></span>
                                                 <span class="error glyphicon glyphicon-remove form-control-feedback hidden" aria-hidden="true"></span>

@@ -15,6 +15,49 @@ html, body {
     font-size: 14px;
 }
 
+.funcionalidade {
+    background-color: #2A2D96;
+    .tarefa-descricao {
+        background-color: darkblue;
+        color: #fff;
+        text-align: center;
+        padding: 1em;
+    }
+    .itens-tarefa {
+        .list-group-item{
+            background-color: transparent;
+            border: none;
+            padding: 0.5em;
+            .panel {
+                margin: 0;
+                .panel-heading, .panel-footer {
+                    background-color: #DBDBD3;
+                    color: #fff;
+                    text-align: center;
+                    padding: 0.5em;
+                    color: #2A2D96;
+                }
+                .panel-body {
+                    padding: 0.6em;
+                }
+            }
+        }
+    }
+
+}
+
+.unslider {
+    overflow: hidden;
+    .unslider-arrow {
+        top: 340px;
+        display: block;
+        background-color: azure;
+        width: 50px;
+        height: 50px;
+        text-indent: -9999px;
+        border-radius: 100%;
+    }
+}
 .appui {
     .ui-btn-block {
         display: block;
@@ -25,7 +68,7 @@ html, body {
         color: #fff;
         border: 0;
         font-size: 1.4em;
-        padding: 0.2em 0.5em 0.2em 2em;
+        padding: 0.2em 0.5em 0.2em 0.5em;
         border-radius: 30px;
         font-family: "Fredoka One", "Arial Rounded", Arial, Helvetica, sans-serif;
         &:hover {
@@ -124,7 +167,7 @@ html, body {
     .screen-stage {
         position: absolute;
         width: 960px;
-        height: 495px;
+        /*height: 495px;*/
         top: -560px;
         left: 0;
         background-color: #2E3192;
@@ -161,10 +204,30 @@ html, body {
                     width: 170px;
                     top: -20px;
                     left: 20px;
+                    z-index: 999;
                 }
             }
         }
-        
+        .slider-content {
+            li {
+                position: relative;
+                .slider-text {
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    padding: 1em 3em;
+                    background-color: rgba(108, 75, 179, 0.9);
+                    font-size: 1.2em;
+                    font-weight: bold;
+                    line-height: 1.7em;
+                    text-align: center;
+                    color: #fff;
+                    span {
+                        color: #c4ddf3;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
     }
-
 }
