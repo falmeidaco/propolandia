@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="js/bower_components/unslider/dist/css/unslider.css">
     <link rel="stylesheet" href="js/bower_components/unslider/dist/css/unslider-dots.css">
     <link rel="stylesheet" href="style.css">
-    <script src="js/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="js/bower_components/jquery/jquery.min.js"></script>
     <script src="js/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/bower_components/unslider/dist/js/unslider-min.js"></script>
 </head>
@@ -76,11 +76,12 @@
                     <div class="stage-options">
                         <div class="stage-options-container">
                             <ul class="stage-options-list">
-                                <li class="stage-item">
+                                <!--<li class="stage-item">
                                     <a href="#">
                                         <img src="stages/supermarket/files/main-icon.png" alt="Supermercado">
                                     </a>
                                 </li>
+                                -->
                             </ul>
                         </div>
                     </div>
@@ -89,6 +90,42 @@
 
         </main>    
     </div>
-    <script src="WebApp.js"></script>
+    <script src="Propolandia.js"></script>
+    <script>
+        (function($){
+            jQuery(document).ready(function() {
+                
+                //Cria e inicializa objeto classe Propolandia
+                var oa = new Propolandia();
+                oa.setStages(Ambientes);
+                
+                //Cria ícones dos ambientes
+                $.each(Ambientes, function(i, e) {
+                    $('.stage-options-list').append('<li class="stage-item" data-stage-itemname="'+e.properties.nicename+'"><a href="#'+e.properties.nicename+'"><img src="'+e.path + oa.getStageAsset(e.properties.nicename, e.properties.icon_default).src +'" alt="'+e.properties.name+'"></a></li>');
+                });
+                //Adiciona evento aos ícones dos ambientes.
+                $('.stage-item a').on('click', function (e) {
+                    //Esconde opções da home
+                    $(".app-logo").animate({"top":"-200px"},1000);
+                    $(".home-options-default").animate({"right":"-300px"},1000);
+                    $(".home-welcome-text").animate({"bottom":"-40px"},1000);
+                    //Exibe painel do ambiente
+                    $(".screen-stage").animate({"top":"0"},1000);
+                    return false;
+                })
+                //Adiciona evento para voltar para a home
+                $(".back-home").click(function() {
+                    //Esconde painel do ambiente
+                    $(".screen-stage").animate({"top":"-560px"},1000);
+                    //Exibe opções da home
+                    $(".app-logo").animate({"top":"30px"},1000);
+                    $(".home-options-default").animate({"right":"15px"},1000);            
+                    $(".home-welcome-text").animate({"bottom":"15px"},1000);
+                    return false;
+                });
+
+            });
+        }(jQuery));
+    </script>
 </body>
 </html>

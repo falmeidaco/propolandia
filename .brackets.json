@@ -12,5 +12,9 @@
             "linting.collapsed": true,
             "brackets-git.gitPath": "git"
         }
-    }
+    },
+    "jscodehints.detectedExclusions": [
+        "C:/xampp/htdocs/github-smdufc/oafnx/js/bower_components/unslider/src/js/unslider.js",
+        "C:/xampp/htdocs/github-smdufc/oafnx/js/bower_components/unslider/dist/js/unslider-min.js"
+    ]
 }
