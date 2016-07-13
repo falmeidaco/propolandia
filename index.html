@@ -19,11 +19,12 @@
             <div class="screen-stage">
                 <div class="screen-container">
                     <header>
-                        <img class="stage-icon" src="stages/supermarket/files/main-icon.png" alt="Mercado">
-                        <h2 class="title">Você está no <span>Mercado!</span></h2>
+                        <img class="stage-icon" src="stages/supermarket/files/main-icon.png">
+                        <h2 class="title stage-title">Você está no <span>Mercado!</span></h2>
                         <button class="ui-btn back-home"><span class="glyphicon glyphicon-circle-arrow-left"></span> Voltar</button>
                     </header>
                     <div class="stage-content">
+                        <!--
                         <div class="slider-content">
                             <ul>
                                 <li>
@@ -56,6 +57,7 @@
                                 </li>
                             </ul>
                         </div>
+                        -->
                     </div>
                 </div>
             </div>
@@ -95,35 +97,53 @@
         (function($){
             jQuery(document).ready(function() {
                 
+                function exibirPainelAmbiente(status) {
+                    if (status === true) {
+                        $(".screen-stage").animate({"top":"0"},1000);
+                    } else {
+                        $(".screen-stage").animate({"top":"-560px"},1000);
+                    }
+                }
+                
+                function exibirHome(status) {
+                    if (status === true) {
+                        $(".app-logo").animate({"top":"30px"},1000);
+                        $(".home-options-default").animate({"right":"15px"},1000);            
+                        $(".home-welcome-text").animate({"bottom":"15px"},1000);
+                    } else {
+                        $(".app-logo").animate({"top":"-200px"},1000);
+                        $(".home-options-default").animate({"right":"-300px"},1000);
+                        $(".home-welcome-text").animate({"bottom":"-40px"},1000);
+                    }
+                }
+                
                 //Cria e inicializa objeto classe Propolandia
                 var oa = new Propolandia();
                 oa.setStages(Ambientes);
                 
                 //Cria ícones dos ambientes
-                $.each(Ambientes, function(i, e) {
-                    $('.stage-options-list').append('<li class="stage-item" data-stage-itemname="'+e.properties.nicename+'"><a href="#'+e.properties.nicename+'"><img src="'+e.path + oa.getStageAsset(e.properties.nicename, e.properties.icon_default).src +'" alt="'+e.properties.name+'"></a></li>');
+                $.each(oa.getStages(), function(i, stage) {
+                    $('.stage-options-list').append('<li class="stage-item" data-stage-itemname="'+stage.properties.nicename+'"><a href="#'+stage.properties.nicename+'" data-stage-name="' + stage.properties.nicename + '"><img src="' + oa.getStageAsset(stage.properties.nicename, stage.properties.icon_default, true).src + '" alt="' + stage.properties.name + '"></a></li>');
                 });
+                
                 //Adiciona evento aos ícones dos ambientes.
                 $('.stage-item a').on('click', function (e) {
-                    //Esconde opções da home
-                    $(".app-logo").animate({"top":"-200px"},1000);
-                    $(".home-options-default").animate({"right":"-300px"},1000);
-                    $(".home-welcome-text").animate({"bottom":"-40px"},1000);
-                    //Exibe painel do ambiente
-                    $(".screen-stage").animate({"top":"0"},1000);
-                    return false;
-                })
-                //Adiciona evento para voltar para a home
-                $(".back-home").click(function() {
-                    //Esconde painel do ambiente
-                    $(".screen-stage").animate({"top":"-560px"},1000);
-                    //Exibe opções da home
-                    $(".app-logo").animate({"top":"30px"},1000);
-                    $(".home-options-default").animate({"right":"15px"},1000);            
-                    $(".home-welcome-text").animate({"bottom":"15px"},1000);
+                    
+                    oa.setCurrentStage($(this).data().stageName);
+                    
+                    $(".stage-title").html(oa.getCurrentStage().properties.welcome_prefix + '<span>' + oa.getCurrentStage().properties.name + '</span>');
+                    $(".stage-icon").attr('src', oa.getStageAsset(oa.getCurrentStage().properties.nicename, oa.getCurrentStage().properties.icon_default).src);
+                    
+                    exibirHome(false);
+                    exibirPainelAmbiente(true);
                     return false;
                 });
-
+                //Adicione evento para o botão voltar
+                $(".back-home").click(function() {
+                    exibirHome(true);
+                    exibirPainelAmbiente(false);
+                    return false;
+                });
             });
         }(jQuery));
     </script>

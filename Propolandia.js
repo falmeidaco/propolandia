@@ -10,14 +10,33 @@
             stages = stages_data;
         }
         
-        this.getStageAsset = function (stage_name, asset_name) {
-            var i;
-            for (i = 0; i < stages[stage_name].assets.length; i += 1) {
-                if (stages[stage_name].assets[i].name === asset_name) return stages[stage_name].assets[i];
-            }
-            return null;
-        }
+        this.getStages = function() {
+            return stages;
+        };
         
+        this.getStageAsset = function (stage_name, asset_name, full_path) {
+            var i, asset = null;
+            for (i = 0; i < stages[stage_name].assets.length; i += 1) {
+                if (stages[stage_name].assets[i].name === asset_name) {
+                    if (full_path === true) {
+                        asset = stages[stage_name].assets[i];
+                        asset.src = stages[stage_name].path + asset.src;
+                    } else {
+                        return stages[stage_name].assets[i];    
+                    }
+                    break;
+                }
+            }
+            return asset;
+        };
+        
+        this.setCurrentStage = function (stage_name){
+            current_stage = stages[stage_name];
+        };
+        
+        this.getCurrentStage = function () {
+            return current_stage;  
+        };
     }
 
     /* Configuração dos ambientes */
