@@ -1,0 +1,27 @@
+{
+  "name": "OA Propolândia",
+  "homepage": "https://github.com/smdufc/oafnx",
+  "authors": [
+    "Felipe Almeida <felipealmeidacosta@gmail.com>"
+  ],
+  "description": "Objeto de aprendizagem criado pela equie FN(X) para o curso de Congnição e Mídias Digitais pela Universidade Federal do Ceará.",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "oa",
+    "fnx",
+    "ufc",
+    "javascript",
+    "html5"
+  ],
+  "license": "CC",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "js/bower_components",
+    "test",
+    "tests"
+  ]
+}

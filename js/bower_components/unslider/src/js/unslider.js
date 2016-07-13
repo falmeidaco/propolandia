@@ -3,7 +3,7 @@
  *   version 2.0
  *   by @idiot and friends
  */
-
+ 
 (function($) {
 	//  Don't throw any errors when jQuery
 	if(!$) {
@@ -34,7 +34,7 @@
 			//  An easing string to use. If you're using Velocity, use a
 			//  Velocity string otherwise you can use jQuery/jQ UI options.
 			easing: 'swing', // [.42, 0, .58, 1],
-
+			
 			//  Does it support keyboard arrows?
 			//  Can pass either true or false -
 			//  or an object with the keycodes, like so:
@@ -48,7 +48,7 @@
 				prev: 37,
 				next: 39
 			},
-
+			
 			//  Do you want to generate clickable navigation
 			//  to skip to each slide? Accepts boolean true/false or
 			//  a callback function per item to generate.
@@ -103,7 +103,7 @@
 		self.$slides = null;
 		self.$nav = null;
 		self.$arrows = [];
-
+		
 		//  Set our indexes and totals
 		self.total = 0;
 		self.current = 0;
@@ -232,7 +232,7 @@
 				//  And add it to our navigation item
 				$nav.children('ol').append('<li data-slide="' + key + '">' + label + '</li>');
 			});
-
+			
 			//  Keep a copy of the nav everywhere so we can use it
 			self.$nav = $nav.insertAfter(self.$context);
 
@@ -331,7 +331,7 @@
 			$.each(pos, function(index, item) {
 				self.$slides.push.apply(
 					self.$slides,
-
+					
 					//  Exclude all cloned slides and call .first() or .last()
 					//  depending on what `item` is.
 					self.$slides.filter(':not(".' + self._ + '-clone")')[item]()
@@ -366,7 +366,7 @@
 		};
 
 		//  Unset the keyboard navigation
-		//  Remove the handler
+		//  Remove the handler 
 		self.destroyKeys = function() {
 			//  Remove the event handler
 			$(document).off('keyup' + self.eventSuffix);
@@ -387,7 +387,7 @@
 
 			return self;
 		};
-
+		
 		//  Despite the name, this doesn't do any animation - since there's
 		//  now three different types of animation, we let this method delegate
 		//  to the right type, keeping the name for backwards compat.
@@ -415,7 +415,7 @@
 			self.$context.trigger(self._ + '.change', [to, self.$slides.eq(to)]);
 
 			//  Delegate the right method - everything's named consistently
-			//  so we can assume it'll be called "animate" +
+			//  so we can assume it'll be called "animate" + 
 			var fn = 'animate' + $._ucfirst(self.options.animation);
 
 			//  Make sure it's a valid animation method, otherwise we'll get
@@ -447,7 +447,7 @@
 		self.prev = function() {
 			return self.animate(self.current - 1, 'prev');
 		};
-
+		
 
 		//  Our default animation method, the old-school left-to-right
 		//  horizontal animation
@@ -613,5 +613,5 @@
 			return $this.data('unslider', new $.Unslider($this, opts));
 		});
 	};
-
+	
 })(window.jQuery);
