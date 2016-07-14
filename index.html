@@ -7,9 +7,6 @@
     <link rel="stylesheet" href="js/bower_components/unslider/dist/css/unslider.css">
     <link rel="stylesheet" href="js/bower_components/unslider/dist/css/unslider-dots.css">
     <link rel="stylesheet" href="style.css">
-    <script src="js/bower_components/jquery/jquery.min.js"></script>
-    <script src="js/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/bower_components/unslider/dist/js/unslider-min.js"></script>
 </head>
 <body>
     <div class="app-container">
@@ -19,45 +16,105 @@
             <div class="screen-stage">
                 <div class="screen-container">
                     <header>
-                        <img class="stage-icon" src="stages/supermarket/files/main-icon.png">
+                        <span class="stage-icon-container"></span>
                         <h2 class="title stage-title">Você está no <span>Mercado!</span></h2>
                         <button class="ui-btn back-home"><span class="glyphicon glyphicon-circle-arrow-left"></span> Voltar</button>
                     </header>
                     <div class="stage-content">
-                        <!--
-                        <div class="slider-content">
-                            <ul>
-                                <li>
-                                    <div class="slider-image">
-                                        <img src="stages/supermarket/files/Untitled-1.jpg" alt="Imagem 1">
+                        <div class="situation-content">
+                            <div class="situation-title">
+                                <span class="situation-title-index"></span> - <span class="situation-title-text"></span>
+                            </div>
+                            <div class="situation-description"></div>
+                            <div class="left-side">
+                                <div class="situation-icons">
+                                    <div class="icon-control-content icon-control-1">
+                                        <div class="icon-control-image">
+                                            <span class="badge">0</span>
+                                            <div class="image-container">
+                                                   
+                                            </div>
+                                            <div class="icon-name"></div>
+                                        </div>
+                                        <div class="icon-control-buttons">
+                                            <div class="acoes btn-group">
+                                                <button type="button" class="btn btn-default remove-item btn-danger"><span class="glyphicon glyphicon-minus"></span></button>
+                                                <button type="button" class="btn btn-default add-item btn-success"><span class="glyphicon glyphicon-plus"></span></button>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <p class="slider-text">
-                                        <span>DONA LUZIA</span> - Joãozinho meu filho, como vai você?<br>
-                                        <span>Joãozinho</span> - Estou bem Dona Luzia, e a senhora, indo para as compras?
-                                    </p>
-                                </li>
-                                <li>
-                                    <div class="slider-image">
-                                        <img src="stages/supermarket/files/Untitled-1.jpg" alt="Imagem 1">
+                                    <div class="icon-control-content icon-control-2">
+                                        <div class="icon-control-image">
+                                            <span class="badge">0</span>
+                                            <div class="image-container">
+                                                
+                                            </div>
+                                            <div class="icon-name"></div>
+                                        </div>
+                                        <div class="icon-control-buttons">
+                                            <div class="acoes btn-group">
+                                                <button type="button" class="btn btn-default remove-item btn-danger"><span class="glyphicon glyphicon-minus"></span></button>
+                                                <button type="button" class="btn btn-default add-item btn-success"><span class="glyphicon glyphicon-plus"></span></button>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <p class="slider-text">
-                                        <span>DONA LUZIA</span> - Sim sim meu querido, mas eu estou tão cansada... Poderia me ajudar a fazer umas contas? Você é bom em matemática né meu jovem?<br>
-                                        <span>Joãozinho</span> - Mas é claro Dona Luzia!
-                                    </p>
-                                </li>
-                                <li><iframe scrolling="no" src="funcionalidade.html" width="960" height="445" frameborder="0"></iframe></li>
-                                <li>
-                                    <div class="slider-image">
-                                        <img src="stages/supermarket/files/Untitled-1.jpg" alt="Imagem 1">
+                                </div>
+                                <div class="situation-dinamic-view">
+                                    <div class="dinamic-content">
+                                        
                                     </div>
-                                    <p class="slider-text">
-                                        <span>DONA LUZIA</span> - Muito obrigado Joãoziho! Você me ajudou muito nas compras.<br>
-                                        <span>Joãozinho</span> - Que nada Dona Luzia!
-                                    </p>
-                                </li>
-                            </ul>
+                                </div>
+                            </div>
+                            <div class="right-side">
+                                <p>Preencha corretamente a tabela</p>
+                                <ul class="ul-table">
+                                    <li class="th">
+                                        <div class="col">
+                                            <span class="item1-name"></span>
+                                        </div>
+                                        <div class="col">
+                                            <span class="item2-name"></span>
+                                        </div>
+                                    </li>
+                                    <li class="row_a">
+                                        <div class="col">
+                                            <input class="form-control" disabled type="text">
+                                        </div>
+                                        <div class="col">
+                                            <input class="form-control" disabled type="text">
+                                        </div>
+                                    </li>
+                                    <li class="row_a">
+                                        <div class="col">
+                                            <input class="form-control" disabled type="text">
+                                        </div>
+                                        <div class="col">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </li>
+                                    <li class="row_a">
+                                        <div class="col">
+                                            <input class="form-control" disabled type="text">
+                                        </div>
+                                        <div class="col">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </li>
+                                    <li class="row_a">
+                                        <div class="col">
+                                            <input class="form-control" disabled type="text">
+                                        </div>
+                                        <div class="col">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-block btn-lg btn-success check-value">VERIFICAR RESPOSTAS</button>
+                            </div>
                         </div>
-                        -->
+                        <div class="slide-content">
+                            
+                        </div>
                     </div>
                 </div>
             </div>
@@ -72,8 +129,11 @@
                         <p><strong>Bem vindo à Propolândia!</strong><br> Explore a cidade e aprenda sobre proporções matemáticas!</p>
                     </div>
                     <div class="home-options-default">
+                       <!--
                         <button class="ui-btn">Ajuda</button>
-                        <button class="ui-btn">Créditos</button>
+                        -->
+                        <a class="ui-btn" href="creditos.html">Créditos</a>
+
                     </div>
                     <div class="stage-options">
                         <div class="stage-options-container">
@@ -92,6 +152,9 @@
 
         </main>    
     </div>
+    <script src="js/bower_components/jquery/jquery.min.js"></script>
+    <script src="js/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/bower_components/unslider/dist/js/unslider-min.js"></script>
     <script src="Propolandia.js"></script>
     <script>
         (function($){
@@ -117,27 +180,208 @@
                     }
                 }
                 
+                function createStep(step_id) {
+                    var table_values, table_values_answers, slide, i, html_content, situation, 
+                        current_step = oa.getCurrentStage().story_steps[step_id-1], 
+                        current_situation = oa.getCurrentStage().situations[current_step.content - 1];
+                    
+                    if (current_step.type === "slide") {
+                        $('.stage-content .situation-content').hide();
+                        $('.stage-content .slide-content').empty();
+                        html_content = '<div class="slider-content"><ul>';
+                        for (i = 0; i < current_step.content.length; i += 1) {
+                            if (current_step.content[i].image_asset === "noimage") {
+                                html_content += '<li><div class="slider-action"><p>'+ current_step.content[i].text +'</p><p><button class="btn btn-lg btn-success next-step">Continuar</button></p></div></li>';
+                            } else {
+                                html_content += '<li><div class="slider-image"><img src="' + oa.getAsset(current_step.content[i].image_asset).src + '"></div><p class="slider-text">'+current_step.content[i].text+'</p></li>';
+                            }
+                        } 
+                        html_content += '</ul></div>';
+                        $('.stage-content .slide-content').show().append(html_content);
+                        slide = $('.slider-content').unslider();
+                        $('.stage-content .slide-content').show();
+                        
+                    } else if (current_step.type === "situation") {
+                        table_values = current_situation.table_values;
+                        table_values_answers = current_situation.table_values_answers;
+                        
+                        for (i = 0; i < table_values.length; i+=1) {
+                            $('.row_a:eq('+i+')').find('input')[0].value = table_values[i];
+                            $('.row_a:eq('+i+')').find('input:eq(1)').data('a', table_values_answers[i]);
+                            $('.row_a:eq('+i+')').find('input:eq(1)').val('');
+                            if (i === 0) {
+                                $('.row_a:eq(0)').find('input')[1].value = table_values_answers[i];
+                            }
+                        }
+                        
+                        $('.check-value').unbind().on('click', function () {
+                            var v, a, errors = 0;
+                            for (i = 0; i < table_values.length; i+=1) {
+                                v = $('.row_a:eq('+i+')').find('input')[1].value;
+                                a = $('.row_a:eq('+i+')').find('input:eq(1)').data('a');
+                                console.log(a, v);
+                                if (v == a) {
+                                    continue;
+                                } else {
+                                    errors +=1;
+                                }
+                            }
+                            if (errors>0) {
+                                window.alert('Verifique suas respostas.')
+                            } else {
+                                oa.setStageStep( oa.getStageStep() + 1);
+                                createStep(oa.getStageStep());
+                            }
+                        });
+                        
+                        $('.stage-content .slide-content').hide();
+                        $('.stage-content .situation-content').show();
+                        //Textos da tarefa
+                        $('.situation-title-index').html('TAREFA ' + current_step.content);
+                        $('.situation-title-text').html(current_situation.title);
+                        $('.situation-description').html(current_situation.description);
+                        //Icone 1
+                        $('.icon-control-1').data('current_value', current_situation.item_1.start_value);
+                        $('.icon-control-1 .image-container').empty().append('<img class="img-responsive" src="'+oa.getAsset(current_situation.item_1.icon_default).src+'" />');
+                        $('.icon-control-1 .icon-name, .item1-name').empty().append(current_situation.item_1.name + ' (' + current_situation.item_1.unit + ')');
+                        $('.icon-control-1 .badge').html(current_situation.item_1.start_value);
+                        $('.icon-control-1 .add-item').unbind().data({'situation':current_step.content, 'max':current_situation.item_1.max_value}).click(function(e) {
+                            var current_value =  parseInt($('.icon-control-1').data('current_value')),
+                                max_value = parseInt($(this).data('max')),
+                                relation = oa.getCurrentStage().situations[oa.getStageSituation()-1].item_1.relation;
+                            if (current_value < max_value) {
+                                current_value += 1;
+                                $('.icon-control-1').data('current_value', current_value);
+                                $('.icon-control-1 .badge').html(current_value);
+                                if (relation >  oa.getCurrentStage().situations[oa.getStageSituation()-1].item_2.relation) {
+                                    $('.icon-control-2').data('current_value', current_value * relation);
+                                    $('.icon-control-2 .badge').html($('.icon-control-2').data('current_value'));
+                                } else {
+                                    $('.icon-control-2').data('current_value', Math.floor(current_value / oa.getCurrentStage().situations[oa.getStageSituation()-1].item_2.relation));
+                                    $('.icon-control-2 .badge').html($('.icon-control-2').data('current_value'));
+                                }
+                            }
+                            printDinamicContent(parseInt($('.icon-control-1').data('current_value')), parseInt($('.icon-control-2').data('current_value')));
+                        });
+                        $('.icon-control-1 .remove-item').unbind().data({'situation':current_step.content, 'min':current_situation.item_1.min_value}).click(function(e) {
+                            var current_value =  parseInt($('.icon-control-1').data('current_value')),
+                                min_value = parseInt($(this).data('min')),
+                                relation = oa.getCurrentStage().situations[oa.getStageSituation()-1].item_1.relation;
+                            if (current_value > min_value) {
+                                current_value -= 1;
+                                $('.icon-control-1').data('current_value', current_value);
+                                $('.icon-control-1 .badge').html(current_value);
+                                if (relation >  oa.getCurrentStage().situations[oa.getStageSituation()-1].item_2.relation) {
+                                    $('.icon-control-2').data('current_value', current_value * relation);
+                                    $('.icon-control-2 .badge').html($('.icon-control-2').data('current_value'));
+                                } else {
+                                    $('.icon-control-2').data('current_value', Math.floor(current_value / oa.getCurrentStage().situations[oa.getStageSituation()-1].item_2.relation));
+                                    $('.icon-control-2 .badge').html($('.icon-control-2').data('current_value'));
+                                }
+                                
+                            }
+                            printDinamicContent(parseInt($('.icon-control-1').data('current_value')), parseInt($('.icon-control-2').data('current_value')));
+                        });
+                        //Icone 2
+                        $('.icon-control-2').data('current_value', current_situation.item_2.start_value);
+                        $('.icon-control-2 .image-container').empty().append('<img class="img-responsive" src="'+oa.getAsset(current_situation.item_2.icon_default).src+'" />');
+                        $('.icon-control-2 .icon-name, .item2-name').empty().append(current_situation.item_2.name + ' (' + current_situation.item_2.unit + ')');
+                        $('.icon-control-2 .badge').html(current_situation.item_2.start_value);
+                        $('.icon-control-2 .add-item').unbind().data({'situation':current_step.content, 'max':current_situation.item_2.max_value}).click(function(e) {
+                            var current_value =  parseInt($('.icon-control-2').data('current_value')),
+                                max_value = parseInt($(this).data('max')),
+                                relation = oa.getCurrentStage().situations[oa.getStageSituation()-1].item_2.relation;
+                            if (current_value < max_value) {
+                                current_value += 1;
+                                $('.icon-control-2').data('current_value', current_value);
+                                $('.icon-control-2 .badge').html(current_value);
+                                if (relation >  oa.getCurrentStage().situations[oa.getStageSituation()-1].item_2.relation) {
+                                    $('.icon-control-1').data('current_value', current_value * relation);
+                                    $('.icon-control-1 .badge').html($('.icon-control-1').data('current_value'));
+                                } else {
+                                    $('.icon-control-1').data('current_value', Math.floor(current_value / oa.getCurrentStage().situations[oa.getStageSituation()-1].item_1.relation));
+                                    $('.icon-control-1 .badge').html($('.icon-control-1').data('current_value'));
+                                }
+                                
+                            }
+                            printDinamicContent(parseInt($('.icon-control-1').data('current_value')), parseInt($('.icon-control-2').data('current_value')));
+                        });
+                        $('.icon-control-2 .remove-item').unbind().data({'situation':current_step.content, 'min':current_situation.item_2.min_value}).click(function(e) {
+                            var current_value =  parseInt($('.icon-control-2').data('current_value')),
+                                min_value = parseInt($(this).data('min')),
+                                relation = oa.getCurrentStage().situations[oa.getStageSituation()-1].item_2.relation;
+                            if (current_value > min_value) {
+                                current_value -= 1;
+                                $('.icon-control-2').data('current_value', current_value);
+                                $('.icon-control-2 .badge').html(current_value);
+                                if (relation >  oa.getCurrentStage().situations[oa.getStageSituation()-1].item_2.relation) {
+                                    $('.icon-control-1').data('current_value', current_value * relation);
+                                    $('.icon-control-1 .badge').html($('.icon-control-1').data('current_value'));
+                                } else {
+                                    $('.icon-control-1').data('current_value', Math.floor(current_value / oa.getCurrentStage().situations[oa.getStageSituation()-1].item_1.relation));
+                                    $('.icon-control-1 .badge').html($('.icon-control-1').data('current_value'));
+                                }
+                            }
+                            printDinamicContent(parseInt($('.icon-control-1').data('current_value')), parseInt($('.icon-control-2').data('current_value')));
+                        });
+                        printDinamicContent(parseInt($('.icon-control-1').data('current_value')), parseInt($('.icon-control-2').data('current_value')));
+                    } else if (current_step.type === "end")  {
+                        exibirHome(true);
+                        exibirPainelAmbiente(false);
+                        return false;
+                    }
+                }
+                
+                function printDinamicContent(v1, v2) {
+                    var i, html_content = "";
+                    var asset_1 = oa.getAsset(oa.getCurrentStage().situations[oa.getCurrentStage().story_steps[oa.getStageStep()-1].content-1].item_1.icon_default).src;
+                    var asset_2 = oa.getAsset(oa.getCurrentStage().situations[oa.getCurrentStage().story_steps[oa.getStageStep()-1].content-1].item_2.icon_default).src;
+                    
+                    for (i = 0; i < v1; i +=1) {
+                        html_content += '<img src="'+asset_1+'" width="32" />';
+                    }
+                    
+                    html_content += "<br />";
+                    
+                    for (i = 0; i < v2; i +=1) {
+                        html_content += '<img src="'+asset_2+'" width="32" />';
+                    }
+                    
+                    $('.dinamic-content').empty().append(html_content);
+                    //console.log(v1, v2, asset_1);
+                }
+                
                 //Cria e inicializa objeto classe Propolandia
                 var oa = new Propolandia();
                 oa.setStages(Ambientes);
                 
                 //Cria ícones dos ambientes
                 $.each(oa.getStages(), function(i, stage) {
-                    $('.stage-options-list').append('<li class="stage-item" data-stage-itemname="'+stage.properties.nicename+'"><a href="#'+stage.properties.nicename+'" data-stage-name="' + stage.properties.nicename + '"><img src="' + oa.getStageAsset(stage.properties.nicename, stage.properties.icon_default, true).src + '" alt="' + stage.properties.name + '"></a></li>');
+                    $('.stage-options-list').append('<li class="stage-item" data-stage-itemname="'+stage.properties.nicename+'"><a href="#'+stage.properties.nicename+'" data-stage-name="' + stage.properties.nicename + '"><img src="' + oa.getStageAsset(stage.properties.nicename, stage.properties.icon_default).src + '" alt="' + stage.properties.name + '"></a></li>');
+                });
+                
+                //
+                $('.stage-content').on('click', '.next-step', function(e) {
+                    oa.setStageStep(oa.getStageStep() + 1);
+                    createStep(oa.getStageStep());
                 });
                 
                 //Adiciona evento aos ícones dos ambientes.
                 $('.stage-item a').on('click', function (e) {
-                    
+                    /* Prepara ambiente */
                     oa.setCurrentStage($(this).data().stageName);
-                    
                     $(".stage-title").html(oa.getCurrentStage().properties.welcome_prefix + '<span>' + oa.getCurrentStage().properties.name + '</span>');
-                    $(".stage-icon").attr('src', oa.getStageAsset(oa.getCurrentStage().properties.nicename, oa.getCurrentStage().properties.icon_default).src);
+                    $(".stage-icon-container").empty().append('<img class="stage-icon" src="' + oa.getAsset(oa.getCurrentStage().properties.icon_default).src + '" title="icone" />');
                     
+                    oa.setStageStep(1);
+                    createStep(1);
+                    
+                    /* Exibe painel ambiente */
                     exibirHome(false);
                     exibirPainelAmbiente(true);
                     return false;
                 });
+                
                 //Adicione evento para o botão voltar
                 $(".back-home").click(function() {
                     exibirHome(true);

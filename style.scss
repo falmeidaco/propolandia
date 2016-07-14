@@ -210,6 +210,15 @@ html, body {
         }
         .slider-content {
             li {
+                .slider-action {
+                    p {
+                        color: #fff;
+                        font-size: 1.4em;
+                        margin-bottom: 1em;
+                    }
+                    padding: 200px 0;
+                    text-align: center;
+                }
                 position: relative;
                 .slider-text {
                     position: absolute;
@@ -226,6 +235,136 @@ html, body {
                         color: #c4ddf3;
                         text-transform: uppercase;
                     }
+                }
+            }
+        }
+    }
+    
+    .situation-content {
+        .situation-title {
+            text-align: center;
+            color:#fff;
+            font-family: "Fredoka One", "Arial Rounded", Arial, Helvetica, sans-serif;
+            font-size:1.7em;
+            padding: 0.6em;
+            background-color: #1b2467;
+            span.situation-title-index {
+                color: #fcea0e;
+            }
+        }
+        .situation-description {
+            color: #fff;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 0.5em 1em;
+            line-height: 1.6em;
+            font-size: 1em;
+            height: 60px;
+            text-align: center;
+        }
+        .left-side {
+            float: left;
+            width: 550px;
+            margin-top: 20px;
+            margin-left:20px; 
+            .situation-icons {
+                float: left;
+                width:140px;
+                .icon-control-content {
+                    padding: 8px;
+                    background-color: rgba(255, 255, 255, 0.2);
+                    border-radius:10px;
+                    margin-bottom: 10px;
+                    .icon-control-image {
+                        border-radius:6px;
+                        background-color: #fff;
+                        text-align: center;
+                        padding: 9px;
+                        position: relative;
+                        .badge {
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            background-color:coral;
+                            border-radius: 0 0.4em 0 1em;
+                            font-weight: 100;
+                            font-size: 0.7em;
+                            text-align: center;
+                            width: 35px
+                        }
+                        .image-container {
+                            img {
+                                margin: 0 auto;
+                            }
+                        }
+                        .icon-name {
+                            text-align: center;
+                            padding: 0.2em 0.2em 0.4em 0.2em;
+                            font-size: 0.9em;
+                        }
+                    }
+                    .icon-control-buttons {
+                        margin-top: -10px;
+                        text-align: center;
+                        button {
+                            font-size: 0.6em;
+                        }
+                    }
+                }
+            }
+            .situation-dinamic-view {
+                float: right;
+                width: 390px;
+                height: 285px;
+                background-color: rgba(255, 255, 255, 0.8);
+                border-radius: 1em;
+                .dinamic-content {
+                    background-color: #fff;
+                    margin: 10px;
+                    padding: 10px;
+                    border-radius: 10px;
+                    height: 265px;
+                }
+            }
+        }
+        .right-side {
+            float: right;
+            padding: 10px;
+            width: 350px;
+            margin-top: 20px;
+            margin-right: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 1em;
+            p {
+                color: #fff;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            .ul-table {
+                text-align: center;
+                li {
+                    input {
+                        text-align: center;
+                    }
+                    height: 40px;
+                    .col {
+                        width: 49%;
+                        &:first-child {
+                            float: left;
+                        }
+                        &:last-child {
+                            float: right;
+                        }
+                    }
+                }
+                li.th {
+                    color: #fff;
+                    height: 25px;
+                    background-color: rgba(255, 255, 255, 0.1);
+                    border-radius: 1em;
+                    .col {
+                        padding: 0.3em;
+                    }
+                    margin-bottom: 10px;
                 }
             }
         }

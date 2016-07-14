@@ -1,7 +1,7 @@
 @import url("assets/reset.css");
 @import url("assets/animations.css");
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Fredoka+One);
-/* line 7, C:/xampp/htdocs/github-falmeidaco/oafnx/style.scss */
+/* line 7, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
 html, body {
   margin: 0;
   padding: 0;
@@ -12,38 +12,38 @@ html, body {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-size: 14px; }
 
-/* line 18, C:/xampp/htdocs/github-falmeidaco/oafnx/style.scss */
+/* line 18, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
 .funcionalidade {
   background-color: #2A2D96; }
-  /* line 20, C:/xampp/htdocs/github-falmeidaco/oafnx/style.scss */
+  /* line 20, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
   .funcionalidade .tarefa-descricao {
     background-color: darkblue;
     color: #fff;
     text-align: center;
     padding: 1em; }
-  /* line 27, C:/xampp/htdocs/github-falmeidaco/oafnx/style.scss */
+  /* line 27, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
   .funcionalidade .itens-tarefa .list-group-item {
     background-color: transparent;
     border: none;
     padding: 0.5em; }
-    /* line 31, C:/xampp/htdocs/github-falmeidaco/oafnx/style.scss */
+    /* line 31, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
     .funcionalidade .itens-tarefa .list-group-item .panel {
       margin: 0; }
-      /* line 33, C:/xampp/htdocs/github-falmeidaco/oafnx/style.scss */
+      /* line 33, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
       .funcionalidade .itens-tarefa .list-group-item .panel .panel-heading, .funcionalidade .itens-tarefa .list-group-item .panel .panel-footer {
         background-color: #DBDBD3;
         color: #fff;
         text-align: center;
         padding: 0.5em;
         color: #2A2D96; }
-      /* line 40, C:/xampp/htdocs/github-falmeidaco/oafnx/style.scss */
+      /* line 40, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
       .funcionalidade .itens-tarefa .list-group-item .panel .panel-body {
         padding: 0.6em; }
 
-/* line 49, C:/xampp/htdocs/github-falmeidaco/oafnx/style.scss */
+/* line 49, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
 .unslider {
   overflow: hidden; }
-  /* line 51, C:/xampp/htdocs/github-falmeidaco/oafnx/style.scss */
+  /* line 51, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
   .unslider .unslider-arrow {
     top: 340px;
     display: block;
@@ -53,11 +53,11 @@ html, body {
     text-indent: -9999px;
     border-radius: 100%; }
 
-/* line 62, C:/xampp/htdocs/github-falmeidaco/oafnx/style.scss */
+/* line 62, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
 .appui .ui-btn-block {
   display: block; }
 
-/* line 65, C:/xampp/htdocs/github-falmeidaco/oafnx/style.scss */
+/* line 65, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
 .appui .ui-btn {
   display: inline-block;
   background-color: #C1272D;
@@ -67,12 +67,12 @@ html, body {
   padding: 0.2em 0.5em 0.2em 0.5em;
   border-radius: 30px;
   font-family: "Fredoka One", "Arial Rounded", Arial, Helvetica, sans-serif; }
-  /* line 74, C:/xampp/htdocs/github-falmeidaco/oafnx/style.scss */
+  /* line 74, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
   .appui .ui-btn:hover {
     background-color: #EF5460;
     cursor: pointer; }
 
-/* line 81, C:/xampp/htdocs/github-falmeidaco/oafnx/style.scss */
+/* line 81, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
 .app-container {
   position: absolute;
   width: 100%;
@@ -81,7 +81,7 @@ html, body {
   transform: translateY(-50%);
   background: white url("assets/media/bg-screen-home.png") center center repeat-x; }
 
-/* line 90, C:/xampp/htdocs/github-falmeidaco/oafnx/style.scss */
+/* line 90, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
 #mainApp {
   width: 960px;
   height: 560px;
@@ -89,7 +89,7 @@ html, body {
   background-color: lightgray;
   overflow: hidden;
   position: relative; }
-  /* line 99, C:/xampp/htdocs/github-falmeidaco/oafnx/style.scss */
+  /* line 99, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
   #mainApp .screen-home {
     position: absolute;
     top: 0;
@@ -97,12 +97,12 @@ html, body {
     width: 960px;
     height: 560px;
     background: white url("assets/media/bg-screen-home.png") center center repeat-x; }
-    /* line 106, C:/xampp/htdocs/github-falmeidaco/oafnx/style.scss */
+    /* line 106, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
     #mainApp .screen-home .screen-container {
       position: relative;
       width: 960px;
       height: 560px; }
-      /* line 110, C:/xampp/htdocs/github-falmeidaco/oafnx/style.scss */
+      /* line 110, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
       #mainApp .screen-home .screen-container .app-logo {
         width: 450px;
         height: 198px;
@@ -111,50 +111,50 @@ html, body {
         top: 30px;
         transform: translateX(-50%);
         z-index: 1; }
-      /* line 119, C:/xampp/htdocs/github-falmeidaco/oafnx/style.scss */
+      /* line 119, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
       #mainApp .screen-home .screen-container .home-welcome-text {
         position: absolute;
         bottom: 15px;
         left: 15px;
         color: #fff;
         font-size: 1em; }
-        /* line 125, C:/xampp/htdocs/github-falmeidaco/oafnx/style.scss */
+        /* line 125, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
         #mainApp .screen-home .screen-container .home-welcome-text strong {
           font-size: 1.6em;
           font-family: "Fredoka One", "Arial Rounded", Arial, Helvetica, sans-serif; }
-      /* line 131, C:/xampp/htdocs/github-falmeidaco/oafnx/style.scss */
+      /* line 131, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
       #mainApp .screen-home .screen-container .stage-options {
         width: 100%;
         height: 210px;
         position: absolute;
         top: 260px; }
-        /* line 136, C:/xampp/htdocs/github-falmeidaco/oafnx/style.scss */
+        /* line 136, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
         #mainApp .screen-home .screen-container .stage-options .stage-options-container {
           width: 100%;
           height: 210px;
           position: relative;
           overflow: hidden; }
-          /* line 141, C:/xampp/htdocs/github-falmeidaco/oafnx/style.scss */
+          /* line 141, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
           #mainApp .screen-home .screen-container .stage-options .stage-options-container ul {
             width: 2000px;
             position: absolute;
             left: 320px;
             list-style: none; }
-            /* line 146, C:/xampp/htdocs/github-falmeidaco/oafnx/style.scss */
+            /* line 146, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
             #mainApp .screen-home .screen-container .stage-options .stage-options-container ul li {
               display: inline-block;
               width: 320px;
               height: 210px;
               margin-right: 30px; }
-              /* line 151, C:/xampp/htdocs/github-falmeidaco/oafnx/style.scss */
+              /* line 151, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
               #mainApp .screen-home .screen-container .stage-options .stage-options-container ul li a {
                 display: block; }
-      /* line 159, C:/xampp/htdocs/github-falmeidaco/oafnx/style.scss */
+      /* line 159, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
       #mainApp .screen-home .screen-container .home-options-default {
         position: absolute;
         right: 15px;
         bottom: 15px; }
-  /* line 167, C:/xampp/htdocs/github-falmeidaco/oafnx/style.scss */
+  /* line 167, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
   #mainApp .screen-stage {
     position: absolute;
     width: 960px;
@@ -163,12 +163,12 @@ html, body {
     left: 0;
     background-color: #2E3192;
     z-index: 2; }
-    /* line 175, C:/xampp/htdocs/github-falmeidaco/oafnx/style.scss */
+    /* line 175, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
     #mainApp .screen-stage .screen-container {
       position: relative;
       width: 960px;
       height: 495px; }
-      /* line 179, C:/xampp/htdocs/github-falmeidaco/oafnx/style.scss */
+      /* line 179, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
       #mainApp .screen-stage .screen-container header {
         display: block;
         position: absolute;
@@ -178,31 +178,40 @@ html, body {
         height: 50px;
         background-color: #9E005D;
         color: #fff; }
-        /* line 188, C:/xampp/htdocs/github-falmeidaco/oafnx/style.scss */
+        /* line 188, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
         #mainApp .screen-stage .screen-container header h2.title {
           margin-left: 200px;
           padding: 0.3em;
           font-size: 2em;
           font-family: "Fredoka One", "Arial Rounded", Arial, Helvetica, sans-serif; }
-          /* line 193, C:/xampp/htdocs/github-falmeidaco/oafnx/style.scss */
+          /* line 193, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
           #mainApp .screen-stage .screen-container header h2.title span {
             color: #FFFF00; }
-        /* line 197, C:/xampp/htdocs/github-falmeidaco/oafnx/style.scss */
+        /* line 197, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
         #mainApp .screen-stage .screen-container header button {
           position: absolute;
           left: 200px;
           top: 65px; }
-        /* line 202, C:/xampp/htdocs/github-falmeidaco/oafnx/style.scss */
+        /* line 202, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
         #mainApp .screen-stage .screen-container header img.stage-icon {
           position: absolute;
           width: 170px;
           top: -20px;
           left: 20px;
           z-index: 999; }
-    /* line 212, C:/xampp/htdocs/github-falmeidaco/oafnx/style.scss */
+    /* line 212, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
     #mainApp .screen-stage .slider-content li {
       position: relative; }
-      /* line 214, C:/xampp/htdocs/github-falmeidaco/oafnx/style.scss */
+      /* line 213, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
+      #mainApp .screen-stage .slider-content li .slider-action {
+        padding: 200px 0;
+        text-align: center; }
+        /* line 214, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
+        #mainApp .screen-stage .slider-content li .slider-action p {
+          color: #fff;
+          font-size: 1.4em;
+          margin-bottom: 1em; }
+      /* line 223, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
       #mainApp .screen-stage .slider-content li .slider-text {
         position: absolute;
         bottom: 0;
@@ -214,9 +223,134 @@ html, body {
         line-height: 1.7em;
         text-align: center;
         color: #fff; }
-        /* line 225, C:/xampp/htdocs/github-falmeidaco/oafnx/style.scss */
+        /* line 234, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
         #mainApp .screen-stage .slider-content li .slider-text span {
           color: #c4ddf3;
           text-transform: uppercase; }
+  /* line 244, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
+  #mainApp .situation-content .situation-title {
+    text-align: center;
+    color: #fff;
+    font-family: "Fredoka One", "Arial Rounded", Arial, Helvetica, sans-serif;
+    font-size: 1.7em;
+    padding: 0.6em;
+    background-color: #1b2467; }
+    /* line 251, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
+    #mainApp .situation-content .situation-title span.situation-title-index {
+      color: #fcea0e; }
+  /* line 255, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
+  #mainApp .situation-content .situation-description {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.5em 1em;
+    line-height: 1.6em;
+    font-size: 1em;
+    height: 60px;
+    text-align: center; }
+  /* line 264, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
+  #mainApp .situation-content .left-side {
+    float: left;
+    width: 550px;
+    margin-top: 20px;
+    margin-left: 20px; }
+    /* line 269, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
+    #mainApp .situation-content .left-side .situation-icons {
+      float: left;
+      width: 140px; }
+      /* line 272, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
+      #mainApp .situation-content .left-side .situation-icons .icon-control-content {
+        padding: 8px;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        margin-bottom: 10px; }
+        /* line 277, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
+        #mainApp .situation-content .left-side .situation-icons .icon-control-content .icon-control-image {
+          border-radius: 6px;
+          background-color: #fff;
+          text-align: center;
+          padding: 9px;
+          position: relative; }
+          /* line 283, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
+          #mainApp .situation-content .left-side .situation-icons .icon-control-content .icon-control-image .badge {
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-color: coral;
+            border-radius: 0 0.4em 0 1em;
+            font-weight: 100;
+            font-size: 0.7em;
+            text-align: center;
+            width: 35px; }
+          /* line 295, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
+          #mainApp .situation-content .left-side .situation-icons .icon-control-content .icon-control-image .image-container img {
+            margin: 0 auto; }
+          /* line 299, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
+          #mainApp .situation-content .left-side .situation-icons .icon-control-content .icon-control-image .icon-name {
+            text-align: center;
+            padding: 0.2em 0.2em 0.4em 0.2em;
+            font-size: 0.9em; }
+        /* line 305, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
+        #mainApp .situation-content .left-side .situation-icons .icon-control-content .icon-control-buttons {
+          margin-top: -10px;
+          text-align: center; }
+          /* line 308, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
+          #mainApp .situation-content .left-side .situation-icons .icon-control-content .icon-control-buttons button {
+            font-size: 0.6em; }
+    /* line 314, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
+    #mainApp .situation-content .left-side .situation-dinamic-view {
+      float: right;
+      width: 390px;
+      height: 285px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 1em; }
+      /* line 320, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
+      #mainApp .situation-content .left-side .situation-dinamic-view .dinamic-content {
+        background-color: #fff;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        height: 265px; }
+  /* line 329, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
+  #mainApp .situation-content .right-side {
+    float: right;
+    padding: 10px;
+    width: 350px;
+    margin-top: 20px;
+    margin-right: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 1em; }
+    /* line 337, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
+    #mainApp .situation-content .right-side p {
+      color: #fff;
+      text-align: center;
+      margin-bottom: 10px; }
+    /* line 342, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
+    #mainApp .situation-content .right-side .ul-table {
+      text-align: center; }
+      /* line 344, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
+      #mainApp .situation-content .right-side .ul-table li {
+        height: 40px; }
+        /* line 345, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
+        #mainApp .situation-content .right-side .ul-table li input {
+          text-align: center; }
+        /* line 349, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
+        #mainApp .situation-content .right-side .ul-table li .col {
+          width: 49%; }
+          /* line 351, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
+          #mainApp .situation-content .right-side .ul-table li .col:first-child {
+            float: left; }
+          /* line 354, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
+          #mainApp .situation-content .right-side .ul-table li .col:last-child {
+            float: right; }
+      /* line 359, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
+      #mainApp .situation-content .right-side .ul-table li.th {
+        color: #fff;
+        height: 25px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 1em;
+        margin-bottom: 10px; }
+        /* line 364, C:/xampp/htdocs/github-smdufc/oafnx/style.scss */
+        #mainApp .situation-content .right-side .ul-table li.th .col {
+          padding: 0.3em; }
 
 /*# sourceMappingURL=style.css.map */

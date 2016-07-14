@@ -1,5 +1,5 @@
 {
-  "name": "OA Propolândia",
+  "name": "oapropolandia",
   "homepage": "https://github.com/smdufc/oafnx",
   "authors": [
     "Felipe Almeida <felipealmeidacosta@gmail.com>"
@@ -23,5 +23,10 @@
     "js/bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "devDependencies": {
+    "bootstrap": "^3.3.6",
+    "unslider": "^2.0.3",
+    "jquery": "1.9.1"
+  }
 }
