@@ -91,8 +91,8 @@
             {
                 "name": "slide_1_2",
                 "title": "Slide 1 - 2",
-                "type": "image/jpg",
-                "src": "ambientes/supermercado/imagens/slide_1_2.jpg"
+                "type": "image/png",
+                "src": "ambientes/supermercado/imagens/slide_1_2.png"
             } 
         ],
         "properties": {
