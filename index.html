@@ -131,9 +131,9 @@
                     <div class="home-options-default">
                        <!--
                         <button class="ui-btn">Ajuda</button>
-                        -->
+                        
                         <a class="ui-btn" href="creditos.html">Créditos</a>
-
+                        -->
                     </div>
                     <div class="stage-options">
                         <div class="stage-options-container">
@@ -150,7 +150,32 @@
                 </div>
             </div> 
 
-        </main>    
+        </main>   
+        <section class="container section-about">
+            <div class="row">
+                <div class="col-md-10">
+                    <p>
+                        Desenvolvido pelos alunos Felipe Almeida e Nathan Chausse, pela Universidade Federal do Ceará.
+                    </p>
+                </div>
+                <div class="col-md-2">
+                    <p>
+                        <img alt="licensa cc" class="pull-right" src="assets/media/cc-88x31.png" />
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p class="text-center msg">Ops! Tem alguma resposta que não está correta.</p>
+            <p class="text-center"><button type="button" class="btn btn-primary" data-dismiss="modal">Tentar novamente</button></p>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="js/bower_components/jquery/jquery.min.js"></script>
     <script src="js/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -227,7 +252,8 @@
                                 }
                             }
                             if (errors>0) {
-                                window.alert('Ops! Tem alguma resposta que não está correta. Tente novamente.');
+                                //window.alert('Ops! Tem alguma resposta que não está correta. Tente novamente.');
+                                $('#myModal').modal();
                             } else {
                                 oa.setStageStep( oa.getStageStep() + 1);
                                 createStep(oa.getStageStep());
