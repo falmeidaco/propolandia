@@ -202,6 +202,7 @@
                         $('.stage-content .slide-content').show();
                         
                     } else if (current_step.type === "situation") {
+                        oa.setStageSituation(current_step.content);
                         table_values = current_situation.table_values;
                         table_values_answers = current_situation.table_values_answers;
                         
@@ -219,7 +220,6 @@
                             for (i = 0; i < table_values.length; i+=1) {
                                 v = $('.row_a:eq('+i+')').find('input')[1].value;
                                 a = $('.row_a:eq('+i+')').find('input:eq(1)').data('a');
-                                console.log(a, v);
                                 if (v == a) {
                                     continue;
                                 } else {
@@ -227,7 +227,7 @@
                                 }
                             }
                             if (errors>0) {
-                                window.alert('Verifique suas respostas.')
+                                window.alert('Ops! Tem alguma resposta que não está correta. Tente novamente.');
                             } else {
                                 oa.setStageStep( oa.getStageStep() + 1);
                                 createStep(oa.getStageStep());
@@ -348,7 +348,6 @@
                     }
                     
                     $('.dinamic-content').empty().append(html_content);
-                    //console.log(v1, v2, asset_1);
                 }
                 
                 //Cria e inicializa objeto classe Propolandia
