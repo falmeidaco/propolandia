@@ -195,11 +195,11 @@
                 "content":[
                      {
                         "image_asset":"slide_1_2",
-                        "text":"<span>DONA LUZIA</span> - Muito obrigado Joãozinho! Você é muito esperto!<br><span>Joãozinho</span> - Estou bem Dona Luzia, e a senhora, indo para as compras?"
+                        "text":"<span>DONA LUZIA</span> - Muito obrigado Joãozinho! Você é muito esperto!"
                     },
                     {
                         "image_asset":"noimage",
-                        "text":"Agora que você já aprender a calcular o valor das compras do mercadinho, explore os outros lugares da cidade!"
+                        "text":"Agora que você já aprender a calcular o valor das compras<br /> no mercadinho, explore os outros lugares da cidade!"
                     }
                 ]
             },
